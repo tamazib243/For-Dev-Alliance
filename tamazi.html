@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamazi Friend Club</title>
+</head>
+<style>
+    body {
+       
+    background-color: rgb(251, 251, 251);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        form {
+            background-color: rgba(233, 131, 62, 0.555);
+            margin:0px 400px;
+            margin-top: 50px;
+        }
+        input {
+            margin-top: 20px;
+        }
+    #description{
+        height:80px;
+        width:40%;
+        margin-top: 20px;
+    }
+    #gender{
+        margin-top: 20px;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <center><h3>Tamazi Friends Club</h3></center>
+    <form name="Registrationform" onsubmit="return Submit()">
+    <center>
+    <label for="firstname">First Name :</label>
+    <input id="firstname" type="text" placeholder="Enter your Firstname..." required><br>
+    <label for="lastname">Last Name :</label>
+    <input id="lastname"type="text" placeholder="Enter your Lastname..." autocomplete="" required> <br>
+    <label for="address">Address :</label>
+    <input id="address"type="text" placeholder="Enter Address..." autocomplete="" required maxlength="35"><br>
+    <label for="DOB">Date of Birth :</label>
+    <input id="DOB" type="date"><br>
+    <label for="gender">Gender :</label>
+    <select name="gender" id="gender" class="w-100 text-center">
+    <option selected value=""></option>
+    <option value="male">Male</option>
+    <option value="female">Female</option></select><br><br><br>
+   <label for="description">Why Should we join you? </label><br>
+    <textarea name="description" id="description"></textarea><br>
+</form>
+<button class="btn" onclick="Submit()">Submit</button> </center>
+</body>
+<script src="tamazi.js">
+</script>
+</html>
